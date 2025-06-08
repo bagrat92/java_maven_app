@@ -23,8 +23,8 @@ pipeline{
         }
         stage ('Package and Test Code'){
             steps{
-                sh  "mvn test"
-                sh  "mvn package"
+                sh  "maven-3.6 test"
+                sh  "maven-3.6 package"
             }
         }
         stage('Building image'){
